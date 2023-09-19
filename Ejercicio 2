@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <math.h>
-
-//Suma de los cuadrados de los primeros 100 numeros
 
 int main() {
     int i, num = 100, sum = 0;
@@ -9,7 +6,7 @@ int main() {
     printf("Suma de los cuadrados de los primeros 100 numeros:\n");
 
     for (i = 1; i <= num; i++) {
-        int pot = pow(i, 2);
+        int pot = i * i;
         printf("%d\n", pot);
         sum = sum + pot;
     }
